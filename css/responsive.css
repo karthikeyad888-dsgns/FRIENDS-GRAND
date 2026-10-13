@@ -1,0 +1,173 @@
+/* Karthikeya Connect - Responsive Design */
+
+/* Tablet & Smaller Desktops (Under 1024px) */
+@media (max-width: 1024px) {
+  .sidebar-panel {
+    width: 310px;
+  }
+  
+  .welcome-hero-banner {
+    padding: 12px 18px;
+  }
+
+  .message-row {
+    max-width: 82%;
+  }
+
+  .local-pip-container {
+    width: 200px;
+    height: 125px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* Tablets and Mobile Phones (Under 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column-reverse; /* Bottom navigation on mobile! */
+  }
+
+  /* Bottom Navigation Bar on Mobile */
+  .nav-rail {
+    width: 100vw;
+    height: 64px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 12px;
+    border-right: none;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .brand-logo {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-item.active::before {
+    left: 10px;
+    right: 10px;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 3px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .nav-footer {
+    display: none;
+  }
+
+  /* Sidebar List occupies full width when open */
+  .sidebar-panel {
+    width: 100vw;
+    height: calc(100vh - 64px);
+    border-right: none;
+  }
+
+  /* Main Chat View toggle on mobile */
+  .main-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 64px);
+    z-index: 25;
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .main-view.mobile-active {
+    transform: translateX(0);
+  }
+
+  .chat-back-btn {
+    display: inline-flex !important;
+  }
+
+  .welcome-hero-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .welcome-actions {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .chat-header {
+    padding: 0 16px;
+    height: 64px;
+  }
+
+  .chat-messages {
+    padding: 16px;
+  }
+
+  .message-row {
+    max-width: 90%;
+  }
+
+  .chat-composer {
+    padding: 10px 16px;
+  }
+
+  .emoji-popover {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    bottom: 70px;
+  }
+
+  .incoming-call-dialog {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+
+  .call-header {
+    padding: 16px 20px;
+  }
+
+  .local-pip-container {
+    width: 130px;
+    height: 90px;
+    bottom: 90px;
+    right: 12px;
+  }
+
+  .call-controls-island {
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  .btn-call-action {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .btn-call-action.hangup {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Very Small Mobile (< 400px) */
+@media (max-width: 400px) {
+  .theme-picker-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chat-actions .call-btn span {
+    display: none; /* Icon only */
+  }
+}

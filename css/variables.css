@@ -1,0 +1,133 @@
+/* Karthikeya Connect - Design Tokens & Theme Variables */
+:root {
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Primary Brand & Accents */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-light: rgba(99, 102, 241, 0.12);
+  --primary-glow: rgba(99, 102, 241, 0.25);
+
+  --secondary: #8b5cf6;
+  --secondary-hover: #7c3aed;
+
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+
+  /* Status Colors */
+  --status-online: #10b981;
+  --status-away: #f59e0b;
+  --status-busy: #f43f5e;
+  --status-offline: #64748b;
+
+  /* Dark Theme (Default - Midnight Indigo) */
+  --bg-app: #0b0f19;
+  --bg-sidebar: #0f172a;
+  --bg-surface: #141e33;
+  --bg-surface-elevated: #1a2742;
+  --bg-surface-hover: #223254;
+  --bg-glass: rgba(19, 27, 46, 0.75);
+  --bg-glass-card: rgba(26, 39, 66, 0.65);
+
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-medium: rgba(255, 255, 255, 0.12);
+  --border-focus: rgba(99, 102, 241, 0.5);
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-inverse: #0b0f19;
+
+  --bubble-incoming: #19253d;
+  --bubble-incoming-text: #f1f5f9;
+  --bubble-outgoing: #4f46e5;
+  --bubble-outgoing-text: #ffffff;
+
+  /* Shadows & Depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.28);
+  --shadow-call: 0 20px 50px rgba(0, 0, 0, 0.65);
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Calming Slate Theme */
+[data-theme="slate"] {
+  --bg-app: #0f172a;
+  --bg-sidebar: #1e293b;
+  --bg-surface: #243247;
+  --bg-surface-elevated: #2c3e58;
+  --bg-surface-hover: #334866;
+  --bg-glass: rgba(30, 41, 59, 0.85);
+  --bg-glass-card: rgba(36, 50, 71, 0.7);
+  --primary: #38bdf8;
+  --primary-hover: #0284c7;
+  --primary-light: rgba(56, 189, 248, 0.12);
+  --bubble-outgoing: #0284c7;
+  --bubble-incoming: #2c3e58;
+}
+
+/* Emerald Dusk Theme */
+[data-theme="emerald"] {
+  --bg-app: #061e1b;
+  --bg-sidebar: #092a26;
+  --bg-surface: #0f3d37;
+  --bg-surface-elevated: #154e47;
+  --bg-surface-hover: #1c6158;
+  --bg-glass: rgba(9, 42, 38, 0.85);
+  --bg-glass-card: rgba(15, 61, 55, 0.7);
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --primary-light: rgba(16, 185, 129, 0.15);
+  --bubble-outgoing: #059669;
+  --bubble-incoming: #154e47;
+}
+
+/* Daylight Clean Light Theme */
+[data-theme="light"] {
+  --bg-app: #f4f6fb;
+  --bg-sidebar: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f8fafc;
+  --bg-surface-hover: #edf2f7;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-card: rgba(255, 255, 255, 0.9);
+
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.14);
+  --border-focus: rgba(99, 102, 241, 0.6);
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --bubble-incoming: #f1f5f9;
+  --bubble-incoming-text: #0f172a;
+  --bubble-outgoing: #4f46e5;
+  --bubble-outgoing-text: #ffffff;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
+  --shadow-call: 0 24px 60px rgba(15, 23, 42, 0.35);
+}
